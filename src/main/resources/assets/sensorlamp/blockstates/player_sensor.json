@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "powered=false": { "model": "sensorlamp:block/player_sensor" },
+    "powered=true": { "model": "sensorlamp:block/player_sensor_on" }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "powered=false": { "model": "sensorlamp:block/sensor_lamp" },
+    "powered=true": { "model": "sensorlamp:block/sensor_lamp_on" }
+  }
+}

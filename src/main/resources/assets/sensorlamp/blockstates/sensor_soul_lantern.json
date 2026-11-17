@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "hanging=false,powered=false": { "model": "sensorlamp:block/sensor_soul_lantern" },
+    "hanging=true,powered=false": { "model": "sensorlamp:block/sensor_soul_lantern_hanging" },
+    "hanging=false,powered=true": { "model": "sensorlamp:block/sensor_soul_lantern_on" },
+    "hanging=true,powered=true": { "model": "sensorlamp:block/sensor_soul_lantern_hanging_on" }
+  }
+}

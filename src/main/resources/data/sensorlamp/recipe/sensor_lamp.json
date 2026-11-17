@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "ingredients": [
+    { "item": "minecraft:redstone_lamp" },
+    { "item": "sensorlamp:player_sensor" }
+  ],
+  "result": { "id": "sensorlamp:sensor_lamp", "count": 1 }
+}

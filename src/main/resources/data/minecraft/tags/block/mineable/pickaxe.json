@@ -1,0 +1,10 @@
+{
+  "values": [
+    "sensorlamp:sensor_lamp",
+    "sensorlamp:sensor_lantern",
+    "sensorlamp:sensor_wall_lantern",
+    "sensorlamp:sensor_soul_lantern",
+    "sensorlamp:sensor_soul_wall_lantern",
+    "sensorlamp:player_sensor"
+  ]
+}

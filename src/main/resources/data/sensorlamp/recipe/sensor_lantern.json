@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "ingredients": [
+    { "item": "minecraft:lantern" },
+    { "item": "sensorlamp:player_sensor" }
+  ],
+  "result": { "id": "sensorlamp:sensor_lantern", "count": 1 }
+}

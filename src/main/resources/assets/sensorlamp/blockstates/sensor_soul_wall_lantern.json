@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "facing=north,powered=false": {
+      "model": "sensorlamp:block/sensor_soul_wall_lantern"
+    },
+    "facing=north,powered=true": {
+      "model": "sensorlamp:block/sensor_soul_wall_lantern_on"
+    },
+    "facing=east,powered=false": {
+      "model": "sensorlamp:block/sensor_soul_wall_lantern",
+      "y": 90
+    },
+    "facing=east,powered=true": {
+      "model": "sensorlamp:block/sensor_soul_wall_lantern_on",
+      "y": 90
+    },
+    "facing=south,powered=false": {
+      "model": "sensorlamp:block/sensor_soul_wall_lantern",
+      "y": 180
+    },
+    "facing=south,powered=true": {
+      "model": "sensorlamp:block/sensor_soul_wall_lantern_on",
+      "y": 180
+    },
+    "facing=west,powered=false": {
+      "model": "sensorlamp:block/sensor_soul_wall_lantern",
+      "y": 270
+    },
+    "facing=west,powered=true": {
+      "model": "sensorlamp:block/sensor_soul_wall_lantern_on",
+      "y": 270
+    }
+  }
+}
