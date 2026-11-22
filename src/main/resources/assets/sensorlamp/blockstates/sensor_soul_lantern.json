@@ -1,8 +1,38 @@
 {
-  "variants": {
-    "hanging=false,powered=false": { "model": "sensorlamp:block/sensor_soul_lantern" },
-    "hanging=true,powered=false": { "model": "sensorlamp:block/sensor_soul_lantern_hanging" },
-    "hanging=false,powered=true": { "model": "sensorlamp:block/sensor_soul_lantern_on" },
-    "hanging=true,powered=true": { "model": "sensorlamp:block/sensor_soul_lantern_hanging_on" }
-  }
+  "multipart": [
+    {
+      "when": {
+        "hanging": "false"
+      },
+      "apply": {
+        "model": "sensorlamp:block/sensor_soul_lantern"
+      }
+    },
+    {
+      "when": {
+        "hanging": "true"
+      },
+      "apply": {
+        "model": "sensorlamp:block/sensor_soul_lantern_hanging"
+      }
+    },
+    {
+      "when": {
+        "hanging": "false",
+        "powered": "false"
+      },
+      "apply": {
+        "model": "sensorlamp:block/sensor_soul_lantern_off_overlay"
+      }
+    },
+    {
+      "when": {
+        "hanging": "true",
+        "powered": "false"
+      },
+      "apply": {
+        "model": "sensorlamp:block/sensor_soul_lantern_hanging_off_overlay"
+      }
+    }
+  ]
 }

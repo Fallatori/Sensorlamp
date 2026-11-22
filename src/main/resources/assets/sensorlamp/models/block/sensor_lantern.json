@@ -1,5 +1,7 @@
 {
   "parent": "minecraft:block/template_lantern",
   "render_type": "minecraft:cutout",
-  "textures": { "lantern": "sensorlamp:block/sensor_lantern" }
+  "textures": {
+    "lantern": "minecraft:block/lantern"
+  }
 }

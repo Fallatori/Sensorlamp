@@ -151,6 +151,8 @@ var generateModMetadata = tasks.register("generateModMetadata", ProcessResources
             mod_name               : mod_name,
             mod_license            : mod_license,
             mod_version            : mod_version,
+            mod_authors            : mod_authors,
+            mod_url                : mod_url,
     ]
     inputs.properties replaceProperties
     expand replaceProperties
@@ -175,6 +177,28 @@ publishing {
             url "file://${project.projectDir}/repo"
         }
     }
+}
+
+// Ship the license and attribution notices inside the mod jar, and make the
+// archive byte-for-byte reproducible so its SHA-256 can be verified from source.
+tasks.named('jar', Jar).configure {
+    from(rootProject.files('LICENSE', 'NOTICE.md', 'LICENSE-NeoForged-MDK.txt')) {
+        into 'META-INF'
+    }
+    manifest {
+        attributes(
+                'Implementation-Title'  : mod_name,
+                'Implementation-Version': mod_version,
+                'Implementation-Vendor' : mod_authors,
+                'Implementation-URL'    : mod_url,
+                'License'               : mod_license
+        )
+    }
+}
+
+tasks.withType(AbstractArchiveTask).configureEach {
+    preserveFileTimestamps = false
+    reproducibleFileOrder = true
 }
 
 tasks.withType(JavaCompile).configureEach {

@@ -1,25 +1,52 @@
+# Sensor Lamp
 
-Installation information
-=======
+A NeoForge mod for Minecraft 1.21.1 that adds lamps, lanterns and a player
+sensor that switch on when a player comes near — a quiet alternative to the
+sculk sensor.
 
-This template repository can be directly cloned to get you started with a new
-mod. Simply create a new repository cloned from this one, by following the
-instructions provided by [GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
+- **Blocks:** Sensor Lamp, Sensor Lantern / Soul Lantern (standing, hanging
+  and wall-mounted), Player Sensor.
+- **Hidden sensors:** attach a sensor to other blocks; crouch + right-click
+  with an empty hand to change its settings.
+- Detection range and off delay are configurable per sensor, with defaults
+  for newly placed sensors.
 
-Once you have your clone, simply open the repository in the IDE of your choice. The usual recommendation for an IDE is either IntelliJ IDEA or Eclipse.
+## Requirements
 
-If at any point you are missing libraries in your IDE, or you've run into problems you can
-run `gradlew --refresh-dependencies` to refresh the local cache. `gradlew clean` to reset everything 
-{this does not affect your code} and then start the process again.
+- Minecraft 1.21.1
+- NeoForge 21.1.265 or newer
 
-Mapping Names:
-============
-By default, the MDK is configured to use the official mapping names from Mojang for methods and fields 
-in the Minecraft codebase. These names are covered by a specific license. All modders should be aware of this
-license. For the latest license text, refer to the mapping file itself, or the reference copy here:
-https://github.com/NeoForged/NeoForm/blob/main/Mojang.md
+## Download
 
-Additional Resources: 
-==========
-Community Documentation: https://docs.neoforged.net/  
-NeoForged Discord: https://discord.neoforged.net/
+Get the jar from [GitHub Releases](https://github.com/Fallatori/Sensorlamp/releases).
+Each release lists the SHA-256 checksum of the jar, and is tagged with the
+matching source (`vX.Y.Z`).
+
+### packwiz
+
+```sh
+packwiz url add "Sensor Lamp" https://github.com/Fallatori/Sensorlamp/releases/download/v1.1.1/sensorlamp-1.1.1.jar
+```
+
+## Building
+
+```sh
+./gradlew build
+```
+
+The jar is written to `build/libs/`. Archive timestamps and file order are
+fixed, so building a release tag with the same JDK version (noted in the
+release) should reproduce the checksum published on that release.
+
+## License
+
+Code and original assets: MIT, Copyright (c) 2026 Fallatori — see
+[LICENSE](LICENSE).
+
+Third-party material and attribution (NeoForged MDK build template, references
+to vanilla Minecraft resources) are described in [NOTICE.md](NOTICE.md).
+`LICENSE`, `NOTICE.md` and `LICENSE-NeoForged-MDK.txt` are also included in the
+jar under `META-INF/`.
+
+Not an official Minecraft product. Not approved by or associated with Mojang
+or Microsoft.

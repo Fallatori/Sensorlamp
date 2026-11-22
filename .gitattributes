@@ -3,3 +3,12 @@
 # are changed when only line endings change.
 src/generated/**/.cache/* text eol=lf
 src/generated/**/*.json text eol=lf
+
+# Everything packaged into the mod jar uses LF on every platform, so a jar
+# built from a release tag reproduces the published SHA-256.
+src/main/** text eol=lf
+LICENSE text eol=lf
+NOTICE.md text eol=lf
+LICENSE-NeoForged-MDK.txt text eol=lf
+*.png binary
+*.jar binary

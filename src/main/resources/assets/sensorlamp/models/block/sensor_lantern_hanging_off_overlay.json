@@ -1,0 +1,7 @@
+{
+  "parent": "sensorlamp:block/template_hanging_lantern_off_overlay",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "overlay": "sensorlamp:block/lantern_off_overlay"
+  }
+}

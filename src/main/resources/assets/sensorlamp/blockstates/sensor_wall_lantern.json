@@ -1,34 +1,78 @@
 {
-  "variants": {
-    "facing=north,powered=false": {
-      "model": "sensorlamp:block/sensor_wall_lantern"
+  "multipart": [
+    {
+      "when": {
+        "facing": "north"
+      },
+      "apply": {
+        "model": "sensorlamp:block/sensor_wall_lantern"
+      }
     },
-    "facing=north,powered=true": {
-      "model": "sensorlamp:block/sensor_wall_lantern_on"
+    {
+      "when": {
+        "facing": "east"
+      },
+      "apply": {
+        "model": "sensorlamp:block/sensor_wall_lantern",
+        "y": 90
+      }
     },
-    "facing=east,powered=false": {
-      "model": "sensorlamp:block/sensor_wall_lantern",
-      "y": 90
+    {
+      "when": {
+        "facing": "south"
+      },
+      "apply": {
+        "model": "sensorlamp:block/sensor_wall_lantern",
+        "y": 180
+      }
     },
-    "facing=east,powered=true": {
-      "model": "sensorlamp:block/sensor_wall_lantern_on",
-      "y": 90
+    {
+      "when": {
+        "facing": "west"
+      },
+      "apply": {
+        "model": "sensorlamp:block/sensor_wall_lantern",
+        "y": 270
+      }
     },
-    "facing=south,powered=false": {
-      "model": "sensorlamp:block/sensor_wall_lantern",
-      "y": 180
+    {
+      "when": {
+        "facing": "north",
+        "powered": "false"
+      },
+      "apply": {
+        "model": "sensorlamp:block/sensor_lantern_hanging_off_overlay"
+      }
     },
-    "facing=south,powered=true": {
-      "model": "sensorlamp:block/sensor_wall_lantern_on",
-      "y": 180
+    {
+      "when": {
+        "facing": "east",
+        "powered": "false"
+      },
+      "apply": {
+        "model": "sensorlamp:block/sensor_lantern_hanging_off_overlay",
+        "y": 90
+      }
     },
-    "facing=west,powered=false": {
-      "model": "sensorlamp:block/sensor_wall_lantern",
-      "y": 270
+    {
+      "when": {
+        "facing": "south",
+        "powered": "false"
+      },
+      "apply": {
+        "model": "sensorlamp:block/sensor_lantern_hanging_off_overlay",
+        "y": 180
+      }
     },
-    "facing=west,powered=true": {
-      "model": "sensorlamp:block/sensor_wall_lantern_on",
-      "y": 270
+    {
+      "when": {
+        "facing": "west",
+        "powered": "false"
+      },
+      "apply": {
+        "model": "sensorlamp:block/sensor_lantern_hanging_off_overlay",
+        "y": 270
+      }
     }
-  }
+  ]
 }
