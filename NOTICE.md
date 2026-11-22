@@ -46,13 +46,12 @@ resource location, which the game resolves at runtime:
   `minecraft:item/lantern`, `minecraft:item/soul_lantern`. The mod draws
   its own overlays (above) on top of these.
 
-`models/block/template_wall_lantern.json` is a model written for this mod.
-Its first two elements (lantern body and lid) use the same box
-coordinates and UV rectangles as Minecraft's
-`template_hanging_lantern.json` so that the vanilla lantern texture maps
-onto it identically; the hook, arm and wall plate are original. The two
-overlay templates likewise use the lantern body/lid box dimensions so they
-line up with the vanilla geometry.
+`models/block/template_wall_lantern.json` is original work by Fallatori,
+created from scratch for this mod. Its lantern body and lid are dimensioned
+to match Minecraft's hanging lantern (same box coordinates and UV
+rectangles) so that the vanilla lantern texture maps onto it identically.
+The two overlay templates likewise use the lantern body/lid box dimensions
+so they line up with the vanilla geometry.
 
 Minecraft is a trademark of Mojang Synergies AB / Microsoft. Sensor Lamp
 is not an official Minecraft product and is not approved by or associated
